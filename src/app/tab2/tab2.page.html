@@ -1,9 +1,144 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
+  <ion-toolbar class="bg-primary">
+    <ion-title class="font-white">
+      Dinner Map System
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card>
+    <ion-img src="https://www.oreno.co.jp/wp-corp/wp-content/uploads/2013/09/24898224.jpg"></ion-img>
+    
+    <ion-card-header>
+      <ion-card-subtitle>{{ restaurant_subtitle }}</ion-card-subtitle>
+      <ion-card-title>{{ french }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ french_description }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-img src="https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/70488/70488083.jpg?token=3b71168&api=v2"></ion-img>
+    
+    <ion-card-header>
+      <ion-card-subtitle>{{ restaurant_subtitle }}</ion-card-subtitle>
+      <ion-card-title>{{ itarian }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ itarian_description }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list lines="none">
+
+    <ion-list-header>
+      <ion-label>Menu List</ion-label>
+    </ion-list-header>
+
+    <ion-item href="">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>スケジュール調整</ion-label>
+    </ion-item>
+
+    <ion-item href="">
+      <ion-icon slot="start" color="medium" name="body"></ion-icon>
+      <ion-label>出席管理</ion-label>
+    </ion-item>
+
+    <ion-item href="">
+      <ion-icon slot="start" color="medium" name="cash"></ion-icon>
+      <ion-label>集金管理</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-grid>
+
+    <!-- 2分割 sample -->
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-card>
+              <ion-img src="https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/70488/70488083.jpg?token=3b71168&api=v2"></ion-img>
+              
+              <ion-card-header>
+                <ion-card-subtitle>{{ restaurant_subtitle }}</ion-card-subtitle>
+                <ion-card-title>{{ itarian }}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>{{ itarian_description }}</p>
+              </ion-card-content>
+            </ion-card>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-card>
+              <ion-img src="https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/70488/70488083.jpg?token=3b71168&api=v2"></ion-img>
+              
+              <ion-card-header>
+                <ion-card-subtitle>{{ restaurant_subtitle }}</ion-card-subtitle>
+                <ion-card-title>{{ itarian }}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>{{ itarian_description }}</p>
+              </ion-card-content>
+            </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- 3分割 sample -->
+    <ion-row>
+      <ion-col>
+        <ion-card>
+            <ion-img src="https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/70488/70488083.jpg?token=3b71168&api=v2"></ion-img>
+            
+            <ion-card-header>
+              <ion-card-subtitle>{{ restaurant_subtitle }}</ion-card-subtitle>
+              <ion-card-title>{{ itarian }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>{{ itarian_description }}</p>
+            </ion-card-content>
+          </ion-card>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-card>
+              <ion-img src="https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/70488/70488083.jpg?token=3b71168&api=v2"></ion-img>
+              
+              <ion-card-header>
+                <ion-card-subtitle>{{ restaurant_subtitle }}</ion-card-subtitle>
+                <ion-card-title>{{ itarian }}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>{{ itarian_description }}</p>
+              </ion-card-content>
+            </ion-card>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-card>
+              <ion-img src="https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/70488/70488083.jpg?token=3b71168&api=v2"></ion-img>
+              
+              <ion-card-header>
+                <ion-card-subtitle>{{ restaurant_subtitle }}</ion-card-subtitle>
+                <ion-card-title>{{ itarian }}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>{{ itarian_description }}</p>
+              </ion-card-content>
+            </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+
+
+</ion-content>
