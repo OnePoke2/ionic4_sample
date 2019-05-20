@@ -1,26 +1,16 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component } from '@angular/core';
 
-import { Tab2Page } from './tab2.page';
+@Component({
+  selector: 'app-tab2',
+  templateUrl: 'tab2.page.html',
+  styleUrls: ['tab2.page.scss']
+})
+export class Tab2Page {
+  restaurant_subtitle = "美味しいよ"
 
-describe('Tab2Page', () => {
-  let component: Tab2Page;
-  let fixture: ComponentFixture<Tab2Page>;
+  french = "俺のフレンチ";
+  french_description = "ロッシーニが美味しいよ"
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [Tab2Page],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    }).compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(Tab2Page);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  itarian = "俺のイタリアン";
+  itarian_description = "ピザが美味しいよ"
+}
